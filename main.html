@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="head">
+    <div class="slider-container">
+        <div class="slider">
+            
+            <div class="slide">
+                <img src="./Group 108.png" alt="" class="mendal">
+                <p class="mendal_p">МИНДАЛЬНЕ БОРОШНO І НАТУРАЛЬНІ ІНГРЕДІЄНТИ</p>
+            </div>
+            
+            <div class="slide">
+                
+                <img class="makarun" src="./Group 216.png" alt="">
+                <p class="makarun_p">У НАС ЗАВЖДИ СВІЖЕ</p>
+            
+            </div>
+
+            <div class="slide">
+                
+                <img class="korobka" src="./Group 214.png" alt="">
+                <p class="korobka_p">ОПТОВІ ПОСТАВКИ ВІД ВИРОБНИКА</p>
+            
+            </div>
+
+            <div class="slide">
+                
+                <img class="car" src="./Group 213.png" alt="">
+                <p class="car_p">ДОСТАВКА В ДЕНЬ ЗАМОВЛЕННЯ</p>
+            
+            </div>
+          
+        </div>
+        <button id="prev"><img src="./Group 312.png" alt=""></button>
+        <button id="next"><img src="./Group 311.png" alt=""></button>
+    
+</div>
+
+    <div class="header">
+        
+        <ul class="nav__left_ul">
+            
+            <div class="burger-menu" onclick="toggleBurgerMenu()">
+                <div class="burger-icon"></div>
+                <div class="burger-icon"></div>
+                <div class="burger-icon"></div>
+              </div>
+            <li class="nav__left">Гарантія свіжості</li>
+            <li class="nav__left">Доставка і оплата</li>
+            <li class="nav__left">Оптові поставки</li>
+            <li class="nav__left">Контакты</li>
+          </ul>
+          <!-- <img class="logo" src="./лого.png" alt=""> -->
+        <ul class="nav__left_ul2">
+            <li class=" nav__left2">
+                <img class="place" src="./place.png" alt="">
+                <select class="select_country" name="user_city">
+                <option value="">Виберіть країну/місто</option>
+                <optgroup label="Україна">
+                  <option value="1">Київ</option>
+                  <option value="2">Харьків</option>
+                  <option value="3">Львів</option>
+                  <option value="4">Одесса</option>
+                </optgroup>
+                  <optgroup label="Польша">
+                  <option value="5">Варшава</option>
+                  <option value="6">Краків</option>
+                  <option value="7">Лодзь</option>
+                  <option value="8">Вроцлав</option>
+                </optgroup>
+              </select></li>
+              <li class="nav__left2"><img class="telefon" src="./phone.png" alt=""> <p>+380 000 0000</p></li>
+            <li class="nav__left2"><img class="basket" src="./klipartz.com.png" alt=""></li>
+            <li class="nav__left2"><img class="telegram" src="./telegram.svg" alt="">
+                <img class="telegram" src="./discord.svg" alt="">
+                <img class="telegram" src="./twitter.svg" alt=""></li>
+          </ul>
+    </div>
+</div>
+<div class="main">
+    <div class="mainmain">
+        <div class="left">
+            <img class="big_makaron" src="./Слой 0 1.png" alt="">
+            <img class="makaron" src="./Фон копия 4 1.png" alt="">
+            <img class="makaron" src="./Фон копия 6 1.png" alt="">
+            <img class="makaron" src="./Фон копия 2 1.png" alt="">
+            <img class="makaron" src="./Фон копия 3 1.png" alt="">
+            <img class="makaron" src="./Фон копия 5 1.png" alt="">
+        </div>
+        <div class="right">
+            <img class="macronshop" src="./Group 212.png" alt="">
+            <h1 class="lovemakaron">Справжнє кохання</h1>
+            <p class="lovetext">Тістечка макарони та інші десерти з натуральних інгредієнтів, приготовлені з любов'ю</p>
+        </div>
+    </div>
+    <!-- <img class="yelow" src="./Ellipse 3.png" alt="">
+    <img class="green" src="./Ellipse 5.png" alt="">
+    <img class="blue" src="./Ellipse 23.png  " alt="">
+    <img class="pink" src="./Ellipse 21.png" alt=""> -->
+    <img src="./Слой 10 1.png" alt="" class="mendalimg">
+    <img src="./Слой 2 1.png" alt="" class="mendalimg">
+    <img src="./Слой 8 1.png" alt="" class="mendalimg">
+    <img src="./Фон копия 6.png" alt="" class="mint">
+    <img src="./Layer 23 1.png" alt="" class="mint">
+    <div class="main_content">
+        <div class="blockfirst">
+            <img src="./Group 125.png" alt="" class="firstblock__img">
+            <h1 class="blockfirst__h1">Готові набори      <img src="./Vector (2).png" alt=""></h1>
+            <p class="blockfirst__p">Готові набори із знижкою. Ви можете підібрати набір на слушний випадок.</p>
+        </div>
+        <div class="block2">
+            <img src="./Group 125.png" alt="" class="firstblock__img">
+            <h1 class="block2__h1">Зібрати свій набір      <img src="./Vector (2).png" alt=""></h1>
+            <p class="block2__p">Вибрати кількість макарун, та вибрати смаки</p>
+        </div>
+        <div class="block3">
+            <img src="./Group 124.png" alt="" class="firstblock__img">
+            <h1 class="block3__h1">Набір з індивідуальною печаткою      <img src="./Vector (2).png" alt=""></h1>
+            <p class="block3__p">Зібрати набір макаронів з унікальним дизайном.</p>
+        </div>
+        <div class="block4">
+            <img src="./Group 123.png" alt="" class="firstblock__img">
+            <h1 class="block4__h1">Весільні пропозиції      <img src="./Vector (2).png" alt=""></h1>
+            <p class="block4__p">Ніжні тістечка макаронс з різними смаками для прикраси вашого весілля</p>
+        </div>
+        <div class="block5">
+            <img src="./Group 125.png" alt="" class="firstblock__img">
+            <h1 class="block5__h1">Корпоративні подарунки      <img src="./Vector (2).png" alt=""></h1>
+            <p class="block5__p">Від 50 грн за шт. Із унікальним дизайном. Приємний комплімент для колег та партнерів</p>
+        </div>
+        <div class="block6">
+            <img src="./Group 130.png" alt="" class="firstblock__img">
+            <h1 class="block6__h1">Оптові поставки     <img src="./Vector (2).png" alt=""></h1>
+            <p class="block6__p">Пропозиція для кав'ярень, кафе, готелів та ін.Перегляньте умови співпраці та відгуки.</p>
+        </div>
+        
+    </div>
+</div>
+<!-- <div class="paralax"> -->
+<div id="title" class="slide_paralax header">
+    <h1 class="paralax_h">Факти про нашу компанію</h1>
+  </div>
+  
+  <div id="slide1" class="slide_paralax">
+    <div class="title">
+      <h1 class="paralax_h">Доставка</h1>
+      <p class="paralax_p">Наша компанія доставляє макарони по всьому світі також в нас є доставка гіпер звуковими літаками та телепортацією. (Але звичайно за це потрібно доплачувати)</p>
+    </div>
+  </div>
+  
+  <div id="slide2" class="slide_paralax">
+    <div class="title">
+      <h1 class="paralax_h">Знаменитості</h1>
+      <p class="paralax_p">Lorem ipsum dolor sit amet, in velit iudico mandamus sit, persius dolorum in per, postulant mnesarchum cu nam. Malis movet ornatus id vim, feugait detracto est ea, eam eruditi conceptam in. Ne sit explicari interesset. Labores perpetua cum at. Id viris docendi denique vim.</p>
+    </div>
+    <img class="photo" src="https://images2.alphacoders.com/909/909983.jpg">
+    <img class="photo" src="https://images3.alphacoders.com/825/825929.jpg"> 
+  </div>
+  
+  <!-- <div id="slide3" class="slide_paralax">
+    <div class="title">
+      <h1 class="paralax_h">Slide 3</h1>
+      <p class="paralax_p">Lorem ipsum dolor sit amet, in velit iudico mandamus sit, persius dolorum in per, postulant mnesarchum cu nam. Malis movet ornatus id vim, feugait detracto est ea, eam eruditi conceptam in. Ne sit explicari interesset. Labores perpetua cum at. Id viris docendi denique vim.</p>
+    </div>
+  </div> -->
+ 
+
+
+
+
+
+
+
+  
+  <main id=app>
+  
+    <h1 class="h1_card">Хочете отримати знижку в 25%? Тоді замовляй нашу картку
+        ✨!</h1>
+    
+    <aside class="card-front">
+      <label class="number" for="cardNumber">
+        5355 1234 0000 9999
+      </label>
+      <label class="name" for="cardHolder">
+        Jane Appleseed
+      </label>
+      <label class="expiry" for="expiryMonth" >
+        03/27
+      </label>
+      <img class="cardLogo" data-v-5d206127="" data-v-8fcb32d4="" style="opacity: 1;" src="https://simey-credit-card.netlify.app/img/logos/master.svg">
+      
+        
+      <div class="chip">
+        <svg role="img" viewBox="0 0 100 100" aria-label="Chip">
+          <use href="#chip-lines" />
+        </svg>
+      </div>
+      <svg class="contactless" role="img" viewBox="0 0 24 24" aria-label="Contactless">
+        <use href="#contactless">
+      </svg>
+      
+    </aside>
+    <a href="./card.html"><button class="card_button"  >start</button></a>
+  </main>
+
+  
+  
+  
+  
+  
+  
+  <svg id="chip">
+    <g id="chip-lines">
+      <polyline points="0,50 35,50"></polyline>
+      <polyline points="0,20 20,20 35,35"></polyline>
+      <polyline points="50,0 50,35"></polyline>
+      <polyline points="65,35 80,20 100,20"></polyline>
+      <polyline points="100,50 65,50"></polyline>
+      <polyline points="35,35 65,35 65,65 35,65 35,35"></polyline>
+      <polyline points="0,80 20,80 35,65"></polyline>
+      <polyline points="50,100 50,65"></polyline>
+      <polyline points="65,65 80,80 100,80"></polyline>
+    </g>
+  </svg>
+  
+  
+  <svg id="contactless">
+     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+     <path d="M9.172 15.172a4 4 0 0 1 5.656 0"></path>
+     <path d="M6.343 12.343a8 8 0 0 1 11.314 0"></path>
+     <path d="M3.515 9.515c4.686 -4.687 12.284 -4.687 17 0"></path>
+  </svg>
+<!-- </div> -->
+
+<div class="akcii">Новинки</div>
+<section class="articles">
+  <article>
+    <div class="article-wrapper">
+      <figure>
+        <img src="https://paulinecakeclub.ru/wp-content/uploads/2023/05/makaron-na-francuzskoj-merenge-foto-1.jpg" alt="" />
+      </figure>
+      <div class="article-body">
+        <h2>Макарони "ФЛАМІНГО"</h2>
+        <p>
+          Зараз в нашій компанії з'явився новий смак макаронів , подейкують що їх роблять зі справжніх птиць
+        </p>
+        <a href="#" class="read-more">
+          Read more <span class="sr-only">about this is some title</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </article>
+  <article>
+
+    <div class="article-wrapper">
+      <figure>
+        <img src="https://www.foodandwine.com/thmb/aYYdeLFtjOGPEcCFJoRXjN0LDxU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/This-Is-Why-Chocolate-Feels-So-Good-to-Eat-According-to-Science-FT-BLOG0123-f684fcf74fd44d70acceaa321bae2fb1.jpg" alt="" />
+      </figure>
+      <div class="article-body">
+        <h2>Найсмачніші цукерки</h2>
+        <p>
+          Ми запускаєм новинку в виді шоколадних цукерок 🍫 вони мають спеціальний смак який робиться за секретним рецептом який знає тільки наша компанія
+        </p>
+        <a href="#" class="read-more">
+          Read more <span class="sr-only">about this is some title</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </article>
+  <article>
+
+    <div class="article-wrapper">
+      <figure>
+        <img src="https://food.pibig.info/uploads/posts/2023-03/1678391605_food-pibig-info-p-kucha-sladostei-krasivo-3.jpg" alt="" />
+      </figure>
+      <div class="article-body">
+        <h2>
+          Mармеладне життя</h2>
+        <p>
+          Наші нові мармеладки можно жувати вічно і вони ніколи не закінчаться але за це звичайно треба заплатити багато грошей
+
+        </p>
+        <a href="#" class="read-more">
+          Read more <span class="sr-only">about this is some title</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </article>
+  <article>
+
+    <div class="article-wrapper">
+      <figure>
+        <img src="https://cdn.britannica.com/50/80550-050-5D392AC7/Scoops-kinds-ice-cream.jpg" alt="" />
+      </figure>
+      <div class="article-body">
+        <h2>44 Життя</h2>
+        <p>
+          Наше морозиво таке ж солодке я життя тих хто його замовляє і доречі воно має 44 смаки
+        </p>
+        <a href="#" class="read-more">
+          Read more <span class="sr-only">about this is some title</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </article>
+
+</section>
+
+
+
+<footer class="footer">
+  <div class="footer__addr">
+    <h1 class="footer__logo">Makaroon</h1>
+        
+    <h2>Contact</h2>
+    
+    <address>
+      5534 Somewhere In. The World 22193-10212<br>
+          
+      <a class="footer__btn" href="mailto:example@gmail.com">Email Us</a>
+    </address>
+  </div>
+  
+  <ul class="footer__nav">
+    <li class="nav__item">
+      <h2 class="nav__title">Media</h2>
+
+      <ul class="nav__ul">
+        <li>
+          <a href="#">Online</a>
+        </li>
+
+        <li>
+          <a href="#">Print</a>
+        </li>
+            
+        <li>
+          <a href="#">Alternative Ads</a>
+        </li>
+      </ul>
+    </li>
+    
+    <li class="nav__item nav__item--extra">
+      <h2 class="nav__title">Technology</h2>
+      
+      <ul class="nav__ul nav__ul--extra">
+        <li>
+          <a href="#">Hardware Design</a>
+        </li>
+        
+        <li>
+          <a href="#">Software Design</a>
+        </li>
+        
+        <li>
+          <a href="#">Digital Signage</a>
+        </li>
+        
+        <li>
+          <a href="#">Automation</a>
+        </li>
+        
+        <li>
+          <a href="#">Artificial Intelligence</a>
+        </li>
+        
+        <li>
+          <a href="#">IoT</a>
+        </li>
+      </ul>
+    </li>
+    
+    <li class="nav__item">
+      <h2 class="nav__title">Legal</h2>
+      
+      <ul class="nav__ul">
+        <li>
+          <a href="#">Privacy Policy</a>
+        </li>
+        
+        <li>
+          <a href="#">Terms of Use</a>
+        </li>
+        
+        <li>
+          <a href="#">Sitemap</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  
+  <div class="legal">
+    <p>&copy; 2019 Something. All rights reserved.</p>
+    
+    <div class="legal__links">
+      <span>Made with <span class="heart">♥</span> remotely from Anywhere</span>
+    </div>
+  </div>
+</footer>
+</body>
+<script src="./script.js"></script>
+</html>

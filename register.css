@@ -1,0 +1,490 @@
+*{  
+    padding: 0;  
+    margin: 0;  
+    border: 0;  
+    text-decoration: none;  
+   }  
+     
+   :focus,:active{outline: none;}  
+   a:focus,a:active{outline: none;}  
+     
+   nav,footer,header,aside{display: block;}  
+     
+   :root{  
+    --boss: rgb(160, 160, 160);  
+    --colors: rgb(210, 198, 198);  
+   }   
+     
+   input,button,textarea{font-family:inherit;}  
+     
+   input::-ms-clear{display: none;}  
+   button{cursor: pointer;}  
+   button::-moz-focus-inner {padding:0;border:0;}  
+   a, a:visited{text-decoration: none;}  
+   a:hover{text-decoration: none;}  
+   ul li{list-style: none;}  
+   img{vertical-align: top;}  
+     
+   h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}  
+     
+   html{  
+    scroll-behavior: smooth;  
+   }
+
+
+.left{
+    height: 100%;
+    /* border: 1px solid #000; */
+    width: 60%;
+    padding: 0;
+}
+video{
+    width: 900px;
+    border: none;
+}
+main{
+    padding: 0;
+    width: 100%;
+    height: 1279px;
+    display: flex;
+}
+.right{
+    height: 100%;
+    /* border: 1px solid #000; */
+    width: 100%;
+    padding: 0;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Cookie|Raleway:300,700,400);
+*{
+	box-sizing: border-box;
+	font-size: 1em;
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: url('https://c4.wallpaperflare.com/wallpaper/587/220/849/abstract-colorful-warm-colors-blurred-soft-gradient-wallpaper-preview.jpg') center no-repeat;
+	background-size: cover;
+	color: #333;
+	font-size: 18px;
+	font-family: 'Raleway', sans-serif;
+    overflow: hidden;
+}
+.container{
+	border-radius: 0.5em;
+	box-shadow: 0 0 1em 0 rgba(51,51,51,0.25);
+	display: block;
+	max-width: 480px;
+	overflow: hidden;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	padding: 2em;
+	position: absolute;
+		top: 50%;
+		left: 50%;
+		z-index: 1;
+	width: 98%;
+    margin-left: 450px;
+}
+.container:before{
+	background: url('http://tfgms.com/sandbox/dailyui/bg-1.jpg') center no-repeat;
+	background-size: cover;
+	content: '';
+	-webkit-filter: blur(10px);
+	filter: blur(10px);
+	height: 100vh;
+	position: absolute;
+		top: 50%;
+		left: 50%;
+		z-index: -1;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	width: 100vw;
+}
+.container:after{
+	background: rgba(255,255,255,0.6);
+	content: '';
+	display: block;
+	height: 100%;
+	position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
+	width: 100%;
+}
+div button.submit{
+	background: rgba(255,255,255,0.25);
+	border: 1px solid #333;
+	line-height: 1em;
+	padding: 0.5em 0.5em;
+	-webkit-transition: all 0.25s;
+	transition: all 0.25s;
+}
+div button.submit:hover{
+	background: #333;
+	color: #fff;
+	outline: none;
+}
+
+div button.success{
+	background: #27ae60;
+	border-color: #27ae60; 
+	color: #fff;
+}
+@-webkit-keyframes spin{
+	from{ transform: rotate(0deg); }
+	to{ transform: rotate(360deg); }
+}
+@keyframes spin{
+	from{ transform: rotate(0deg); }
+	to{ transform: rotate(360deg); }
+}
+div button span.loading-spinner{
+	-webkit-animation: spin 0.5s linear infinite;
+	animation: spin 0.5s linear infinite;
+	border: 2px solid #fff;
+	border-top-color: transparent;
+	border-radius: 50%;
+	display: inline-block;
+	height: 1em;
+	width: 1em;
+}
+
+div label{
+	border-bottom: 1px solid #333;
+	display: block;
+	font-size: 1.25em;
+	margin-bottom: 0.5em;
+	-webkit-transition: all 0.25s;
+	transition: all 0.25s;
+}
+div label.col-one-half{
+	float: left;
+	width: 50%;
+}
+div label.col-one-half:nth-of-type(even){
+	border-left: 1px solid #333;
+	padding-left: 0.25em;
+}
+div label input{
+	background: none;
+	border: none;
+	line-height: 1em;
+	font-weight: 300;
+	padding: 0.125em 0.25em;
+	width: 100%;
+}
+div label input:focus{
+	outline: none;
+}
+div label input:-webkit-autofill{
+	background-color: transparent !important;
+}
+div label span.label-text{
+	display: block;
+	font-size: 0.5em;
+	font-weight: bold;
+	padding-left: 0.5em;
+	text-transform: uppercase;
+	-webkit-transition: all 0.25s;
+	transition: all 0.25s;
+}
+div label.checkbox{
+	border-bottom: 0;
+	text-align: center;
+    display: flex;
+    margin-right: 0;
+}
+div label.checkbox input{
+	/* display: none; */
+}
+div label.checkbox span{
+	font-size: 0.7em;
+    width: 800px;
+    /* border: 1px solid #000; */
+    margin-left: -80px;
+}
+/* div label.checkbox span:before{
+	content: '\e157';
+	display: inline-block;
+	font-family: 'Glyphicons Halflings';
+	font-size: 1.125em;
+	padding-right: 0.25em;
+	position: relative;
+		top: 1px;
+/* } */
+div label.checkbox input:checked + span:before{content: '\e067';}
+div label.invalid{border-color: #c0392b !important;}
+div label.invalid span.label-text{color: #c0392b;}
+div label.password{position: relative;}
+/* div label.password button.toggle-visibility{ */
+	/* background: none;
+	border: none;
+	cursor: pointer;
+	font-size: 0.75em;
+	line-height: 1em;
+	position: absolute;
+		top: 50%;
+		right: 0.5em;
+	text-align: center; */
+	/* -webkit-transform: translateY(-50%); */
+	/* -ms-transform: translateY(-50%); */
+	/* transform: translateY(-50%); */
+	/* -webkit-transition: all 0.25s;  */
+	 /* transition: all 0.25s; */
+/* } */
+/* div label.password button.toggle-visibility:hover,
+div label.password button.toggle-visibility:focus,
+div label.password button.toggle-visibility:active{
+	color: #000;
+	width: 100px;
+	height: 50px;
+
+} */
+/* div label.password button.toggle-visibility span{vertical-align: middle;} */
+div label.password button.toggle-visibility{
+	position: absolute;
+	left: 350px;
+	color: black;
+	
+}
+h1{
+	font-size: 3em;
+	margin: 0 0 0.5em 0;
+	text-align: center;
+	font-family: 'Cookie', cursive;
+}
+h1 img{
+	height: auto;
+	margin: 0 auto;
+	max-width: 240px;
+	width: 100%;
+}
+html{
+	font-size: 18px;
+	height: 100%;
+}
+
+.text-center{
+	text-align: center;
+}
+.eye{
+	width: 100px;
+}
+.toggle-visibility{
+	background: transparent;
+	
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&family=Poppins:wght@400;500;600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+::selection{
+  color: #fff;
+  background: #4db2ec;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #4db2ec;
+}
+.wrapper{
+  max-width: 485px;
+  width: 100%;
+  background: #fff;
+  padding: 22px 30px 40px;
+  border-radius: 10px;
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.05);
+}
+.wrapper header{
+  color: #4db2ec;
+  font-size: 33px;
+  font-weight: 500;
+  text-align: center;
+}
+.wrapper .captcha-area{
+  display: flex;
+  height: 65px;
+  margin: 30px 0 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+.captcha-area .captcha-img{
+  height: 100%;
+  width: 345px;
+  user-select: none;
+  background: #000;
+  border-radius: 5px;
+  position: relative;
+}
+.captcha-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  opacity: 0.95;
+}
+.captcha-img .captcha{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  color: #fff;
+  font-size: 35px;
+  text-align: center;
+  letter-spacing: 10px;
+  transform: translate(-50%, -50%);
+  text-shadow: 0px 0px 2px #b1b1b1;
+  font-family: 'Noto Serif', serif;
+}
+.wrapper button{
+  outline: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  background: #4db2ec;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.wrapper button:hover{
+  background: #2fa5e9;
+}
+.captcha-area .reload-btn{
+  width: 75px;
+  height: 100%;
+  font-size: 25px;
+}
+.captcha-area .reload-btn i{
+  transition: transdiv 0.3s ease;
+}
+.captcha-area .reload-btn:hover i{
+  transform: rotate(15deg);
+}
+.wrapper .input-area{
+  height: 60px;
+  width: 100%;
+  position: relative;
+}
+.input-area input{
+  width: 100%;
+  height: 100%;
+  outline: none;
+  padding-left: 20px;
+  font-size: 20px;
+  border-radius: 5px;
+  border: 1px solid #bfbfbf;
+}
+.input-area input:is(:focus, :valid){
+  padding-left: 19px;
+  border: 2px solid #4db2ec;
+}
+.input-area input::placeholder{
+  color: #bfbfbf;
+}
+.input-area .check-btn{
+  position: absolute;
+  right: 7px;
+  top: 50%;
+  font-size: 17px;
+  height: 45px;
+  padding: 0 20px;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-50%);
+}
+.input-area input:valid + .check-btn{
+  opacity: 1;
+  pointer-events: auto;
+}
+.wrapper .status-text{
+  display: none;
+  font-size: 18px;
+  text-align: center;
+  margin: 20px 0 -5px;
+}
+@media (max-width: 506px){
+  body{
+    padding: 0 10px;
+  }
+  .wrapper{
+    padding: 22px 25px 35px;
+  }
+  .wrapper header{
+    font-size: 25px;
+  }
+  .wrapper .captcha-area{
+    height: 60px;
+  }
+  .captcha-area .captcha{
+    font-size: 28px;
+    letter-spacing: 5px;
+  }
+  .captcha-area .reload-btn{
+    width: 60px;
+    margin-left: 5px;
+    font-size: 20px;
+  }
+  .wrapper .input-area{
+    height: 55px;
+  }
+  .input-area .check-btn{
+    height: 40px;
+  }
+  .wrapper .status-text{
+    font-size: 15px;
+  }
+  .captcha-area .captcha-img{
+    width: 250px;
+  }
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+@media (max-width: 1430px) { 
+  video{
+  display: none;
+}
+.container{
+	
+   margin: 0 auto;
+}
+}

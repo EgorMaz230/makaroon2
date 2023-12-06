@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="register.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div class="left">
+            <video width="100%" height="100%" autoplay loop muted>
+                <source src="./pexels-polina-kovaleva-5430709 (1080p).mp4" type="video/mp4">
+                <source src="movie.ogg" type="video/ogg">
+                Your browser does not support the video tag.
+              </video>
+        </div>
+        <!-- <div class="right"><div class="container">
+            <header>
+                <h1>
+                    <a href="#">
+                        
+                    </a>
+                </h1>
+            </header>
+            <h1 class="text-center">Register</h1>
+            <form class="registration-form">
+                <label class="col-one-half">
+                    <span class="label-text">First Name</span>
+                    <input type="text" id="firstName" name="firstName">
+                </label>
+                <label class="col-one-half">
+                    <span class="label-text">Last Name</span>
+                    <input type="text" name="lastName">
+                </label>
+                <label>
+                    <span class="label-text">Email</span>
+                    <input type="text" name="email">
+                </label>
+                <label class="password">
+                    <span class="label-text">Password</span>
+                    <button class="toggle-visibility" title="toggle password visibility" tabindex="1">
+                        <span class="glyphicon glyphicon-eye-close"></span>
+                    </button>
+                    <input type="password" name="password">
+                </label>
+                <label class="checkbox">
+                    <input type="checkbox" name="newsletter">
+                    <span>Agree with company Confident Information</span>
+                </label>
+                <div class="text-center">
+                    <button class="submit" name="register">Sign Me Up</button>
+                </div>
+            </form>
+        </div>
+         -->
+
+         <div class="container">
+            <header>
+                <h1>
+                    <a href="#">
+                        <!-- <img src="http://tfgms.com/sandbox/dailyui/logo-1.png" alt="Authentic Collection"> -->
+                    </a>
+                </h1>
+            </header>
+            <h1 class="text-center">Register</h1>
+            <div class="registration-form" id="registrationForm">
+                <label class="col-one-half">
+                    <span class="label-text">First Name</span>
+                    <input type="text" name="firstName" id="firstName" required>
+                </label>
+                <label class="col-one-half">
+                    <span class="label-text">Last Name</span>
+                    <input type="text" name="lastName" id="lastName" required>
+                </label>
+                <label>
+                    <span class="label-text">Email</span>
+                    <input type="text" name="email" id="email" required>
+                </label>
+                <label class="password">
+                    <span class="label-text">Password</span>
+                    <button class="toggle-visibility" title="toggle password visibility" tabindex="1" onclick="togglePasswordVisibility()">
+                        Show
+                    </button>
+                    <input type="password" name="password" id="password" required>
+                </label>
+                <label class="checkbox">
+                    <input type="checkbox" name="newsletter" id="newsletter" required>
+                    <span>Agree with company Confident Information</span>
+                </label>
+                <div class="text-center">
+                <button class="submit" name="register" onclick="submitForm()">Sign Me Up</button>
+                </div>
+                <!-- <div class="wrapper">
+                    <header>Captcha in JavaScript</header>
+                    <div class="captcha-area">
+                      <div class="captcha-img">
+                        <img src="captcha-bg.png" alt="Captch Background">
+                        <span class="captcha"></span>
+                      </div>
+                      <button class="reload-btn"><i class="fas fa-redo-alt"></i></button>
+                    </div>
+                    <form action="#" class="input-area">
+                      <input type="text" placeholder="Enter captcha" maxlength="6" spellcheck="false" required>
+                      <button class="check-btn">Check</button>
+                    </form>
+                    <div class="status-text"></div>
+                  </div> -->
+                  <div id="myModal" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close" id="closeModalBtn">&times;</span>
+                        <p>This is a simple modal!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+    </main>
+</body>
+<script src="./register.js"></script>
+</html>
